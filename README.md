@@ -6,13 +6,13 @@ Nodemcu Lua $6
         Switches $2
         1 - Lights
         2 - Misters
-        3 - Alarm ( audible / incl lights - using pir sensor inside )
+        3 - Alarm ( audible / incl lights - using pir sensor inside ) $2
         4 - 
 
         16 Channel Analog Multiplexer $1
         7x Soil Moisture Sensors $6
-        1x Light Intensity Sensor
-        1x UV Intensity Sensor 
+        1x Light Intensity Sensor $1
+        1x UV Intensity Sensor $9
 
         3.3v stepdown power converter $1
         12v DC power adapter
@@ -22,14 +22,14 @@ Nodemcu Lua $6
         2 x HML 5M 30W 300 x SMD 3528 Water Resistant Flexible RGB LED Strip Light w/ 24 Keys Remote Controller  -  RGB COLOR
         Power strip $16
        
-        5x 3/4" PVC Electrical Conduit 10' $2.17/ea = $10.85
+        5x 3/4" PVC Electrical Conduit 10' $2.17/ea = $10.85  + connectors .28/ea $1.12
         http://www.homedepot.com/p/JM-eagle-3-4-in-x-10-ft-PVC-Schedule-40-Conduit-67454/100129197
         50 ft. 14-3 Grey Solid UF-B W/G Cable $35.57
         http://www.homedepot.com/p/Southwire-50-ft-14-3-Grey-Solid-UF-B-W-G-Cable-13057522/206316936
         
         plus tax
-        $47 to run elecrical
-        $47 lights / water / control
+        $50 to run elecrical
+        $60 lights / water / control
         
-        $100 lights/water/controler to greenhouse + tax
+        $110 lights/water/controler to greenhouse + tax
         
