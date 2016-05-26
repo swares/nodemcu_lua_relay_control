@@ -13,6 +13,11 @@ Nodemcu Lua $6
         7x Soil Moisture Sensors $6
         1x Light Intensity Sensor $1
         1x UV Intensity Sensor $9
+        
+        pir motion sensor
+        ultrasonic sensor
+        2x sharp GP2Y0A02YK0F Analog Distance Sensor 20-150cm or other longer range model
+        siren $3
 
         3.3v stepdown power converter $1
         12v DC power adapter
