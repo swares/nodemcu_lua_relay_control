@@ -18,7 +18,7 @@ print('MAC Address: ',wifi.sta.getmac())
 print('Chip ID: ',node.chipid())
 print('Heap Size: ',node.heap(),'\n')
 -- wifi config start
-wifi.sta.config("YOUR_NETWORK_NAME","YOUR_NETWORK_PASSWORD")
+wifi.sta.config('Linksys',"YOUR_NETWORK_PASSWORD")
 -- wifi config end
 
 -- wifi connect start
