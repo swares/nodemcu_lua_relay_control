@@ -38,3 +38,44 @@ Nodemcu Lua $6
         
         $110 lights/water/controler to greenhouse + tax
         
+# notes for enhanced webpage layout (even better if used with ajax)
+<div id="page">
+    <div id="maincontent">
+        <div id="firstcontent">firstcontent</div>
+        <div id="secondcontent">secondcontent</div>
+    </div>
+    <div id="menuleftcontent">
+        <ul id="menu">
+            <li><a href="#firstcontent">first</a></li>
+            <li><a href="#secondcontent">second</a></li>
+        </ul>
+    </div>
+    <div id="clearingdiv"></div>
+</div>
+
+#page {
+    margin-left: 200px;
+}
+#maincontent {
+    float: right;
+    width: 100%;
+    background-color: #F0F0F0;
+}
+#menuleftcontent{
+    float: left;
+    width: 200px;
+    margin-left: -200px;
+    background-color: #CCCCCC;
+}
+#clearingdiv {
+    clear: both;
+}
+
+$(function () {
+    $("#maincontent > div:gt(0)").hide();
+    $("#menu a").on("click", function (e) {
+        var href = $(this).attr("href");
+        $("#maincontent > " + href).show();
+        $("#maincontent > :not(" + href + ")").hide();
+    });
+});
