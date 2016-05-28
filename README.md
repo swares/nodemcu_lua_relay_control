@@ -9,7 +9,7 @@ Nodemcu Lua $6
         3 - Alarm ( turn on - siren / rgb lights / mister / music ) - using pir sensor inside ) $2
         4 - Music
 
-        16 Channel Analog Multiplexer $1
+        ADS1115 4 Channel 16 Bit I2C ADC Module with Pro Gain Amplifier $3
         7x Soil Moisture Sensors $6
         1x Light Intensity Sensor $1
         1x UV Intensity Sensor $9
