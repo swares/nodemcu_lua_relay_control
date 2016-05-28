@@ -1,9 +1,42 @@
 /* I'll start with this super simple example and improve it
   To control our garden misting system.
 */
+
+// -- Define Web Pages --
+// http headers
+//const char web_http200[]    PROGMEM  = { "HTTP/1.1 200 OK\nContent-Type: text/html\nConnection: keep-alive\n\n" };
+//const char web_http404[]    PROGMEM  = { "HTTP/1.1 404 Error\nContent-Type: text/html\nConnection: keep-alive\n\n" };
+// html index and error pages   
+//const char web_error[]      PROGMEM  = { "<!DOCTYPE html><html><head><title>Greenhouse Control Station - Error</title></head><body><h1>Environmental Monitoring Station - Error</h1><p id='error_txt'>Some Error Occured</p></body></html>" };
+//const char web_index[]      PROGMEM  = { "<!DOCTYPE html><html><head><title><title><head><body><h1>Greenhouse Control Station - Index</h1><p>GPIO0 <a href='?pin=ON1'><button>ON</button></a>&nbsp;<a href='?pin=OFF1'><button>OFF</button></a></p><p>GPIO2 <a href='?pin=ON2'><button>ON</button></a>&nbsp;<a href='?pin=OFF2'><button>OFF</button></a></p>";
+//const char web_index_ajax[] PROGMEM  = { "<!DOCTYPE html><html><head><title>Greenhouse Control Station - Index</title><script>function GetSwitchState() {nocache = '&nocache=' + Math.random() * 1000000;var request = new XMLHttpRequest();request.onreadystatechange = function() {if (this.readyState == 4) {if (this.status == 200) {if (this.responseText != null) {document.getElementById('switch_txt'.innerHTML = this.responseText;}}}};request.open('GET', 'ajax_switch' + nocache, true);request.send(null);setTimeout('GetSwitchState()', 1000);}</script></head><body onload='GetSwitchState()'><h1>Environmental Monitoring Station</h1><p id='switch_txt'>Switch state: Not requested...</p></body></html>" };
+
+-- Configure Wireless Internet
+print('\nAll About Circuits init.lua\n')
 wifi.setmode(wifi.STATION)
+print('set mode=STATION (mode='..wifi.getmode()..')\n')
+print('MAC Address: ',wifi.sta.getmac())
+print('Chip ID: ',node.chipid())
+print('Heap Size: ',node.heap(),'\n')
+-- wifi config start
 wifi.sta.config("YOUR_NETWORK_NAME","YOUR_NETWORK_PASSWORD")
-print(wifi.sta.getip())
+-- wifi config end
+
+-- wifi connect start
+tmr.alarm(0, 1000, 1, function()
+   if wifi.sta.getip() == nil then
+      print("Connecting to AP...\n")
+   else
+      ip, nm, gw=wifi.sta.getip()
+      print("IP Info: \nIP Address: ",ip)
+      print("Netmask: ",nm)
+      print("Gateway Addr: ",gw,'\n')
+      tmr.stop(0)
+   end
+end)
+-- wifi connect end
+
+
 led1 = 3
 led2 = 4
 gpio.mode(led1, gpio.OUTPUT)
