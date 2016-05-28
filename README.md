@@ -6,8 +6,8 @@ Nodemcu Lua $6
         Switches $2
         1 - Lights
         2 - Misters
-        3 - Alarm ( audible / incl lights - using pir sensor inside ) $2
-        4 - 
+        3 - Alarm ( turn on - siren / rgb lights / mister / music ) - using pir sensor inside ) $2
+        4 - Music
 
         16 Channel Analog Multiplexer $1
         7x Soil Moisture Sensors $6
@@ -15,7 +15,7 @@ Nodemcu Lua $6
         1x UV Intensity Sensor $9
         
         pir motion sensor
-        ultrasonic sensor
+        ultrasonic sensor $1.50
         2x sharp GP2Y0A02YK0F Analog Distance Sensor 20-150cm or other longer range model
         siren $3
 
