@@ -39,9 +39,16 @@ Nodemcu Lua $6
         $110 lights/water/controler to greenhouse + tax
         
 # notes for enhanced webpage layout (even better if used with ajax)
+        <!doctype html><title>Greenhouse Control</title><h1>Greenhouse Control</h1>
 		<div id="page">
 			<div id="maincontent">
-				<div id="firstcontent">firstcontent</div>
+				<div id="firstcontent">
+                   <p>GPIO0 <a href=\"?pin=ON0\"><button>ON</button></a>&nbsp;<a href=\"?pin=OFF0\"><button>OFF</button></a></p>
+                   <p>GPIO1 <a href=\"?pin=ON1\"><button>ON</button></a>&nbsp;<a href=\"?pin=OFF1\"><button>OFF</button></a></p>
+                   <p>GPIO2 <a href=\"?pin=ON2\"><button>ON</button></a>&nbsp;<a href=\"?pin=OFF2\"><button>OFF</button></a></p>
+                   <p>GPIO3 <a href=\"?pin=ON3\"><button>ON</button></a>&nbsp;<a href=\"?pin=OFF3\"><button>OFF</button></a></p>
+                   <p>GPIO4 <a href=\"?pin=ON4\"><button>ON</button></a>&nbsp;<a href=\"?pin=OFF4\"><button>OFF</button></a></p>
+				</div>
 				<div id="secondcontent">secondcontent</div>
 			</div>
 			<div id="menuleftcontent">
