@@ -40,74 +40,71 @@ Nodemcu Lua $6
         
 # notes for enhanced webpage layout (even better if used with ajax)
 
-	    <!doctype html>
-	    <style>
-	      #page {
-	        margin-left: 200px;
-	      }
-	      #maincontent {
-	        float: right;
-	        width: 100%;
-	        background-color: #F0F0F0;
-	      }
-	      #menuleftcontent{
-	        float: left;
-	        width: 200px;
-	        margin-left: -200px;
-	        background-color: #CCCCCC;
-	      }
-	      #clearingdiv {
-	        clear: both;
-	      }
-	    </style>
-	    <script>
-	      $(function () {
-	        $("#maincontent > div:gt(0)").hide();
-	        $("#menu a").on("click", function (e) {
-	            var href = $(this).attr("href");
-	            $("#maincontent > " + href).show();
-	            $("#maincontent > :not(" + href + ")").hide();
-	        });
-	      });
-	    </script>
-	    <title>Greenhouse Control</title><h1>Greenhouse Control</h1>
-	    <div id="page">
-	        <div id="maincontent">
-	            <div id="main">
-	               Main
-	            </div>
-	            <div id="control">
-	               <p>Switch Control</p>
-	               <p>GPIO0 - InLed <form style="display: inline" action="?pin=ON0" method="get"><button>On</button></form>&nbsp;<form style="display: inline" action="?pin=OFF0" method="get"><button>Off</button></form>
-	               <p>GPIO1 - Water <form style="display: inline" action="?pin=ON1" method="get"><button>On</button></form>&nbsp;<form style="display: inline" action="?pin=OFF1" method="get"><button>Off</button></form>
-	               <p>GPIO2 - Light <form style="display: inline" action="?pin=ON2" method="get"><button>On</button></form>&nbsp;<form style="display: inline" action="?pin=OFF2" method="get"><button>Off</button></form>
-	               <p>GPIO3 - Alarm <form style="display: inline" action="?pin=ON3" method="get"><button>On</button></form>&nbsp;<form style="display: inline" action="?pin=OFF3" method="get"><button>Off</button></form>
-	               <p>GPIO4 - Music <form style="display: inline" action="?pin=ON4" method="get"><button>On</button></form>&nbsp;<form style="display: inline" action="?pin=OFF4" method="get"><button>Off</button></form>
-	            </div>
-	            <div id="music">
-	               Music
-	            </div>
-	        </div>
-	        <div id="menuleftcontent">
-	            <ul id="menu">
-	                <li><a href="#main">Main</a></li>
-	                <li><a href="#control">Control</a></li>
-	                <li><a href="#music">Music</a></li>
-	            </ul>
-	        </div>
-	        <div id="clearingdiv"></div>
-	    </div>
-	<script type='text/javascript'>//<![CDATA[
-
-	$(function () {
-    	  $("#maincontent > div:gt(0)").hide();
-    	  $("#menu a").on("click", function (e) {
-        	var href = $(this).attr("href");
-        	$("#maincontent > " + href).show();
-        	$("#maincontent > :not(" + href + ")").hide();
-    	  });
-	});
-//]]> 
-
-</script>
-
+		<!DOCTYPE html>
+		<html>
+		<head>
+		  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		  <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
+		  <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+		  <style type="text/css">
+		    body {
+		    font: small sans-serif;
+		}
+		#page {
+		    margin-left: 200px;
+		    background-color: #F0F0F0;
+		}
+		#maincontent {
+		    float: right;
+		    width: 100%;
+		}
+		#menuleftcontent {
+		    float: left;
+		    width: 200px;
+		    margin-left: -200px;
+		    background-color: #CCCCCC;
+		}
+		#clearingdiv {
+		    clear: both;
+		}
+		  </style>
+		  <title>Greenhouse Control</title>
+		</head>
+		<body>
+		  <h1>Greenhouse Control</h1>
+		  <div id="page">
+		    <div id="maincontent">
+		        <div id="firstcontent">Status</div>
+		        <div id="secondcontent">
+		    	               <p>Switch Control</p>
+			               <p>GPIO0 - InLed <form style="display: inline" action="?pin=ON0" method="get"><button>On</button></form>&nbsp;<form style="display: inline" action="?pin=OFF0" method="get"><button>Off</button></form>
+			               <p>GPIO1 - Water <form style="display: inline" action="?pin=ON1" method="get"><button>On</button></form>&nbsp;<form style="display: inline" action="?pin=OFF1" method="get"><button>Off</button></form>
+			               <p>GPIO2 - Light <form style="display: inline" action="?pin=ON2" method="get"><button>On</button></form>&nbsp;<form style="display: inline" action="?pin=OFF2" method="get"><button>Off</button></form>
+			               <p>GPIO3 - Alarm <form style="display: inline" action="?pin=ON3" method="get"><button>On</button></form>&nbsp;<form style="display: inline" action="?pin=OFF3" method="get"><button>Off</button></form>
+			               <p>GPIO4 - Music <form style="display: inline" action="?pin=ON4" method="get"><button>On</button></form>&nbsp;<form style="display: inline" action="?pin=OFF4" method="get"><button>Off</button></form>
+		        </div>
+		        <div id="thirdcontent">Music</div>
+		    </div>
+		    <div id="menuleftcontent">
+		        <ul id="menu">
+		            <li><a href="#firstcontent">Status</a></li>
+		            <li><a href="#secondcontent">Control</a></li>
+		            <li><a href="#thirdcontent">Music</a></li>
+		        </ul>
+		    </div>
+		    <div id="clearingdiv"></div>
+		</div>
+		<script type='text/javascript'>//<![CDATA[
+		$(function () {
+		    $("#maincontent > div:gt(0)").hide();
+		    $("#menu a").on("click", function (e) {
+		        var href = $(this).attr("href");
+		        $("#maincontent > " + href).show();
+		        $("#maincontent > :not(" + href + ")").hide();
+		    });
+		});
+		//]]> 
+		</script>
+		</body>
+		</html>
+		
