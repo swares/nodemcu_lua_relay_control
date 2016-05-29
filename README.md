@@ -74,8 +74,8 @@ Nodemcu Lua $6
 		  <h1>Greenhouse Control</h1>
 		  <div id="page">
 		    <div id="maincontent">
-		        <div id="firstcontent">Status</div>
-		        <div id="secondcontent">
+		        <div id="statuscontent">Status</div>
+		        <div id="controlcontent">
 		    	               <p>Switch Control</p>
 			               <p>GPIO0 - InLed <form style="display: inline" action="?pin=ON0" method="get"><button>On</button></form>&nbsp;<form style="display: inline" action="?pin=OFF0" method="get"><button>Off</button></form>
 			               <p>GPIO1 - Water <form style="display: inline" action="?pin=ON1" method="get"><button>On</button></form>&nbsp;<form style="display: inline" action="?pin=OFF1" method="get"><button>Off</button></form>
@@ -83,13 +83,13 @@ Nodemcu Lua $6
 			               <p>GPIO3 - Alarm <form style="display: inline" action="?pin=ON3" method="get"><button>On</button></form>&nbsp;<form style="display: inline" action="?pin=OFF3" method="get"><button>Off</button></form>
 			               <p>GPIO4 - Music <form style="display: inline" action="?pin=ON4" method="get"><button>On</button></form>&nbsp;<form style="display: inline" action="?pin=OFF4" method="get"><button>Off</button></form>
 		        </div>
-		        <div id="thirdcontent">Music</div>
+		        <div id="musiccontent">Music</div>
 		    </div>
 		    <div id="menuleftcontent">
 		        <ul id="menu">
-		            <li><a href="#firstcontent">Status</a></li>
-		            <li><a href="#secondcontent">Control</a></li>
-		            <li><a href="#thirdcontent">Music</a></li>
+		            <li><a href="#statuscontent">Status</a></li>
+		            <li><a href="#controlcontent">Control</a></li>
+		            <li><a href="#musiccontent">Music</a></li>
 		        </ul>
 		    </div>
 		    <div id="clearingdiv"></div>
