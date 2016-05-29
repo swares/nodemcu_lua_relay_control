@@ -110,3 +110,20 @@ Nodemcu Lua $6
 		</body>
 		</html>
 		]]
+
+                // Status Page Data
+                <p>Temperature, Air: </p>
+                <p>Humidity, Air: </p>
+                <p>Humidity, Soil 1: </p>
+                <p>Humidity, Soil 1: </p>
+                <p>Humidity, Soil 1: </p>
+                <p>Humidity, Soil 1: </p>
+                <p>Light Level</p>
+                <p>UV Level</p>
+                <p>Led 0</p>
+                <p>Switch 1</p>
+                <p>Switch 2</p>
+                <p>Switch 3</p>
+                <p>Switch 4</p>
+                
+                
