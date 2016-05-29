@@ -77,11 +77,11 @@ Nodemcu Lua $6
 		        <div id="statuscontent">Status</div>
 		        <div id="controlcontent">
 		    	               <p>Switch Control</p>
-			               <p>GPIO0 - InLed <form style="display: inline" action="?pin=ON0" method="get"><button>On</button></form>&nbsp;<form style="display: inline" action="?pin=OFF0" method="get"><button>Off</button></form>
-			               <p>GPIO1 - Water <form style="display: inline" action="?pin=ON1" method="get"><button>On</button></form>&nbsp;<form style="display: inline" action="?pin=OFF1" method="get"><button>Off</button></form>
-			               <p>GPIO2 - Light <form style="display: inline" action="?pin=ON2" method="get"><button>On</button></form>&nbsp;<form style="display: inline" action="?pin=OFF2" method="get"><button>Off</button></form>
-			               <p>GPIO3 - Alarm <form style="display: inline" action="?pin=ON3" method="get"><button>On</button></form>&nbsp;<form style="display: inline" action="?pin=OFF3" method="get"><button>Off</button></form>
-			               <p>GPIO4 - Music <form style="display: inline" action="?pin=ON4" method="get"><button>On</button></form>&nbsp;<form style="display: inline" action="?pin=OFF4" method="get"><button>Off</button></form>
+			               <p>GPIO0 - InLed <form style="display: inline" action="#controlcontent?pin=ON0" method="get"><button>On</button></form>&nbsp;<form style="display: inline" action="#controlcontent?pin=OFF0" method="get"><button>Off</button></form>
+			               <p>GPIO1 - Water <form style="display: inline" action="#controlcontent?pin=ON1" method="get"><button>On</button></form>&nbsp;<form style="display: inline" action="#controlcontent?pin=OFF1" method="get"><button>Off</button></form>
+			               <p>GPIO2 - Light <form style="display: inline" action="#controlcontent?pin=ON2" method="get"><button>On</button></form>&nbsp;<form style="display: inline" action="#controlcontent?pin=OFF2" method="get"><button>Off</button></form>
+			               <p>GPIO3 - Alarm <form style="display: inline" action="#controlcontent?pin=ON3" method="get"><button>On</button></form>&nbsp;<form style="display: inline" action="#controlcontent?pin=OFF3" method="get"><button>Off</button></form>
+			               <p>GPIO4 - Music <form style="display: inline" action="#controlcontent?pin=ON4" method="get"><button>On</button></form>&nbsp;<form style="display: inline" action="#controlcontent?pin=OFF4" method="get"><button>Off</button></form>
 		        </div>
 		        <div id="musiccontent">Music</div>
 		    </div>
