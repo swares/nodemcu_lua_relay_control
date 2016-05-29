@@ -40,6 +40,7 @@ Nodemcu Lua $6
         
 # notes for enhanced webpage layout (even better if used with ajax)
 
+		webpage = [[
 		<!DOCTYPE html>
 		<html>
 		<head>
@@ -107,4 +108,4 @@ Nodemcu Lua $6
 		</script>
 		</body>
 		</html>
-		
+		]]
