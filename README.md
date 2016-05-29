@@ -13,6 +13,7 @@ Nodemcu Lua $6
         7x Soil Moisture Sensors $6
         1x Light Intensity Sensor $1
         1x UV Intensity Sensor $9
+        1x Air Humidity / Temperature Sensor DHT-11 $1.33
         
         pir motion sensor
         ultrasonic sensor $1.50
