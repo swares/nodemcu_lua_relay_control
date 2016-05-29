@@ -39,7 +39,37 @@ Nodemcu Lua $6
         $110 lights/water/controler to greenhouse + tax
         
 # notes for enhanced webpage layout (even better if used with ajax)
-        <!doctype html><title>Greenhouse Control</title><h1>Greenhouse Control</h1>
+        <!doctype html>
+        <style>
+   		  #page {
+			margin-left: 200px;
+		  }
+		  #maincontent {
+			float: right;
+			width: 100%;
+			background-color: #F0F0F0;
+		  }
+		  #menuleftcontent{
+			float: left;
+			width: 200px;
+			margin-left: -200px;
+			background-color: #CCCCCC;
+		  }
+		  #clearingdiv {
+			clear: both;
+		  }
+        </style>
+		<script>
+		  $(function () {
+			$("#maincontent > div:gt(0)").hide();
+			$("#menu a").on("click", function (e) {
+				var href = $(this).attr("href");
+				$("#maincontent > " + href).show();
+				$("#maincontent > :not(" + href + ")").hide();
+			});
+		  });
+		</script>
+        <title>Greenhouse Control</title><h1>Greenhouse Control</h1>
 		<div id="page">
 			<div id="maincontent">
 				<div id="main">
@@ -53,43 +83,12 @@ Nodemcu Lua $6
                    <p>GPIO3 - Alarm <a href=\"?pin=ON3\"><button>ON</button></a>&nbsp;<a href=\"?pin=OFF3\"><button>OFF</button></a></p>
                    <p>GPIO4 - Music <a href=\"?pin=ON4\"><button>ON</button></a>&nbsp;<a href=\"?pin=OFF4\"><button>OFF</button></a></p>
 				</div>
-				<div id="music">
-                   Music
-				</div>
 			</div>
 			<div id="menuleftcontent">
 				<ul id="menu">
-					<li><a href="#main">Main</a></li>
-					<li><a href="#control">Control</a></li>
-					<li><a href="#music">Music</a></li>
+					<li><a href="#main">first</a></li>
+					<li><a href="#control">second</a></li>
 				</ul>
 			</div>
 			<div id="clearingdiv"></div>
 		</div>
-
-		#page {
-			margin-left: 200px;
-		}
-		#maincontent {
-			float: right;
-			width: 100%;
-			background-color: #F0F0F0;
-		}
-		#menuleftcontent{
-			float: left;
-			width: 200px;
-			margin-left: -200px;
-			background-color: #CCCCCC;
-		}
-		#clearingdiv {
-			clear: both;
-		}
-
-		$(function () {
-			$("#maincontent > div:gt(0)").hide();
-			$("#menu a").on("click", function (e) {
-				var href = $(this).attr("href");
-				$("#maincontent > " + href).show();
-				$("#maincontent > :not(" + href + ")").hide();
-			});
-		});
