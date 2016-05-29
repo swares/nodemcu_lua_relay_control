@@ -114,16 +114,10 @@ Nodemcu Lua $6
                 // Status Page Data
                 <p>Temperature, Air: </p>
                 <p>Humidity, Air: </p>
-                <p>Humidity, Soil 1: </p>
-                <p>Humidity, Soil 1: </p>
-                <p>Humidity, Soil 1: </p>
-                <p>Humidity, Soil 1: </p>
+                <p>Humidity, Soil - 1:   2:  3:  4:  5: </p>
                 <p>Light Level</p>
                 <p>UV Level</p>
                 <p>Led 0</p>
-                <p>Switch 1</p>
-                <p>Switch 2</p>
-                <p>Switch 3</p>
-                <p>Switch 4</p>
+                <p>Switch - 1:   2:   3:   4:  </p>
                 
                 
