@@ -42,19 +42,26 @@ Nodemcu Lua $6
         <!doctype html><title>Greenhouse Control</title><h1>Greenhouse Control</h1>
 		<div id="page">
 			<div id="maincontent">
-				<div id="firstcontent">
-                   <p>GPIO0 <a href=\"?pin=ON0\"><button>ON</button></a>&nbsp;<a href=\"?pin=OFF0\"><button>OFF</button></a></p>
-                   <p>GPIO1 <a href=\"?pin=ON1\"><button>ON</button></a>&nbsp;<a href=\"?pin=OFF1\"><button>OFF</button></a></p>
-                   <p>GPIO2 <a href=\"?pin=ON2\"><button>ON</button></a>&nbsp;<a href=\"?pin=OFF2\"><button>OFF</button></a></p>
-                   <p>GPIO3 <a href=\"?pin=ON3\"><button>ON</button></a>&nbsp;<a href=\"?pin=OFF3\"><button>OFF</button></a></p>
-                   <p>GPIO4 <a href=\"?pin=ON4\"><button>ON</button></a>&nbsp;<a href=\"?pin=OFF4\"><button>OFF</button></a></p>
+				<div id="main">
+                   Main
 				</div>
-				<div id="secondcontent">secondcontent</div>
+				<div id="control">
+				   <p>Switch Control</p>
+                   <p>GPIO0 - InLed <a href=\"?pin=ON0\"><button>ON</button></a>&nbsp;<a href=\"?pin=OFF0\"><button>OFF</button></a></p>
+                   <p>GPIO1 - Water <a href=\"?pin=ON1\"><button>ON</button></a>&nbsp;<a href=\"?pin=OFF1\"><button>OFF</button></a></p>
+                   <p>GPIO2 - Light <a href=\"?pin=ON2\"><button>ON</button></a>&nbsp;<a href=\"?pin=OFF2\"><button>OFF</button></a></p>
+                   <p>GPIO3 - Alarm <a href=\"?pin=ON3\"><button>ON</button></a>&nbsp;<a href=\"?pin=OFF3\"><button>OFF</button></a></p>
+                   <p>GPIO4 - Music <a href=\"?pin=ON4\"><button>ON</button></a>&nbsp;<a href=\"?pin=OFF4\"><button>OFF</button></a></p>
+				</div>
+				<div id="music">
+                   Music
+				</div>
 			</div>
 			<div id="menuleftcontent">
 				<ul id="menu">
-					<li><a href="#firstcontent">first</a></li>
-					<li><a href="#secondcontent">second</a></li>
+					<li><a href="#main">Main</a></li>
+					<li><a href="#control">Control</a></li>
+					<li><a href="#music">Music</a></li>
 				</ul>
 			</div>
 			<div id="clearingdiv"></div>
