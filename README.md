@@ -50,6 +50,7 @@ Nodemcu Lua $6
         brd1 - httpd / switch #4 - Music
         brd1 - ext1 - HC-SR501 - Infrared PIR Motion Sensor 
         brd1 - ext2 - HC-SR04 - Ultrasonic Range Sensor (door open?, someone in center of gh?)
+        
         brd1 - brd2 - ads1115 - 2x i2c 4-channel 15bit analog multiplexer
         brd1 - brd2 - ads1115-1 - ext1 - Soil Moisture Sensor #1
         brd1 - brd2 - ads1115-1 - ext2 - Soil Moisture Sensor #2 
