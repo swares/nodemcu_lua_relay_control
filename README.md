@@ -46,8 +46,7 @@ Nodemcu Lua $6
         HC-SR501 - Infrared PIR Motion Sensor 
         HC-SR04 - Ultrasonic Range Sensor (door open?, someone in center of gh?)
         wifi
-        httpd
-        switches
+        httpd / switches
         
 # notes for enhanced webpage layout (even better if used with ajax)
 
