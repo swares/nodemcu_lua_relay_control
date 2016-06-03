@@ -43,7 +43,7 @@ Nodemcu Lua $6
         brd1 - bmp180 - air pressure and temperature
         brd1 - DS3231 - AT24C32 IIC module precision Real time clock quare memory
         brd1 - wifi
-        brd1 - httpd             - LCD
+        brd1 - httpd             - LED
         brd1 - httpd / switch #1 - Mister
         brd1 - httpd / switch #2 - Alarm
         brd1 - httpd / switch #3 - Lights
