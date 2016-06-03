@@ -39,6 +39,16 @@ Nodemcu Lua $6
         
         $110 lights/water/controler to greenhouse + tax
         
+        
+        bmp180 - air pressure and temperature
+        ads1115 - i2c 4-channel 15bit analog multiplexer
+        DS3231 - AT24C32 IIC module precision Real time clock quare memory
+        HC-SR501 - Infrared PIR Motion Sensor 
+        HC-SR04 - Ultrasonic Range Sensor (door open?, someone in center of gh?)
+        wifi
+        httpd
+        switches
+        
 # notes for enhanced webpage layout (even better if used with ajax)
 
 		webpage = [[
