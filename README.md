@@ -43,10 +43,23 @@ Nodemcu Lua $6
         brd1 - bmp180 - air pressure and temperature
         brd1 - DS3231 - AT24C32 IIC module precision Real time clock quare memory
         brd1 - wifi
-        brd1 - httpd / switches
-        ext1 - HC-SR501 - Infrared PIR Motion Sensor 
-        ext2 - HC-SR04 - Ultrasonic Range Sensor (door open?, someone in center of gh?)
-        brd2 - ads1115 - i2c 4-channel 15bit analog multiplexer
+        brd1 - httpd             - LCD
+        brd1 - httpd / switch #1 - Mister
+        brd1 - httpd / switch #2 - Alarm
+        brd1 - httpd / switch #3 - Lights
+        brd1 - httpd / switch #4 - Music
+        brd1 - ext1 - HC-SR501 - Infrared PIR Motion Sensor 
+        brd1 - ext2 - HC-SR04 - Ultrasonic Range Sensor (door open?, someone in center of gh?)
+        brd1 - brd2 - ads1115 - 2x i2c 4-channel 15bit analog multiplexer
+        brd1 - brd2 - ads1115-1 - ext1 - Soil Moisture Sensor #1
+        brd1 - brd2 - ads1115-1 - ext2 - Soil Moisture Sensor #2 
+        brd1 - brd2 - ads1115-1 - ext3 - Soil Moisture Sensor #3
+        brd1 - brd2 - ads1115-1 - ext4 - Soil Moisture Sensor #4
+        brd1 - brd2 - ads1115-2 - ext1 - Soil Moisture Sensor #5
+        brd1 - brd2 - ads1115-2 - ext2 - Soil Moisture Sensor #6 
+        brd1 - brd2 - ads1115-2 - ext3 - Light Intensity Sensor
+        brd1 - brd2 - ads1115-2 - ext4 - UV Light Intensity Sensor
+
         
 # notes for enhanced webpage layout (even better if used with ajax)
 
