@@ -41,12 +41,12 @@ Nodemcu Lua $6
         
         
         brd1 - bmp180 - air pressure and temperature
-        brd2 - ads1115 - i2c 4-channel 15bit analog multiplexer
         brd1 - DS3231 - AT24C32 IIC module precision Real time clock quare memory
-        ext1 - HC-SR501 - Infrared PIR Motion Sensor 
-        ext2 - HC-SR04 - Ultrasonic Range Sensor (door open?, someone in center of gh?)
         brd1 - wifi
         brd1 - httpd / switches
+        brd2 - ads1115 - i2c 4-channel 15bit analog multiplexer
+        ext1 - HC-SR501 - Infrared PIR Motion Sensor 
+        ext2 - HC-SR04 - Ultrasonic Range Sensor (door open?, someone in center of gh?)
         
 # notes for enhanced webpage layout (even better if used with ajax)
 
