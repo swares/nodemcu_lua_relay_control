@@ -44,8 +44,7 @@ Nodemcu Lua $6
         4D - I2C
         brd1 - DS3231 - AT24C32 IIC module precision Real time clock quare memory
         brd1 - wifi
-        5D - Digital
-        brd1 - httpd             - LED
+        4D - Digital
         brd1 - httpd / switch #1 - Mister
         brd1 - httpd / switch #2 - Alarm
         brd1 - httpd / switch #3 - Lights
@@ -54,7 +53,7 @@ Nodemcu Lua $6
         brd1 - ext1 - HC-SR501 - Infrared PIR Motion Sensor 
         1D - PWM
         brd1 - ext2 - HC-SR04 - Ultrasonic Range Sensor (door open?, someone in center of gh?)
-        
+14d total  12d min usable on brd      
         2D - I2C
         brd1 - brd2 - ads1115 - 2x i2c 4-channel 15bit analog multiplexer
         brd1 - brd2 - ads1115-1 - ext1 - Soil Moisture Sensor #1
