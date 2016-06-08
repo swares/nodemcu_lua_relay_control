@@ -7,19 +7,17 @@ Nodemcu Lua $6
         1 - Lights
         2 - Misters
         3 - Alarm ( turn on - siren / rgb lights / mister / music ) - using pir sensor inside ) $2
-        4 - Music
+        4 - 
 
-        ADS1115 4 Channel 16 Bit I2C ADC Module with Pro Gain Amplifier $3
+        3x ADS1115 4 Channel 16 Bit I2C ADC Module with Pro Gain Amplifier $3
         7x Soil Moisture Sensors $6
         3x Rain Drops Sensors 
         1x Light Intensity Sensor $1
         1x UV Intensity Sensor $9
         1x Air Humidity / Temperature Sensor DHT-11 $1.33
         1x DS3231 RTC Only
-        
-        pir motion sensor
-        ultrasonic sensor $1.50
-        siren $3
+        1x pir motion sensor
+        1x siren $3
 
         3.3v stepdown power converter $1
         12v DC power adapter
