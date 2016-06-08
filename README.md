@@ -77,7 +77,7 @@ Nodemcu Lua $6
         - 7x Soil Moisture Sensors
         - 1x Light Intensity Sensor
         - 1x UV Intensity Sensor
-        3x Rain Drops Sensors - digital read
+        - 3x Rain Drops Sensors - analog read
         1x Air Humidity / Temperature Sensor DHT-11 - 1-wire?
         https://github.com/ok1cdj/ESP8266-LUA/blob/master/Thermometer-DHT11-Thingspeak/dht11.lua
         1x DS3231 RTC Only - I2c
