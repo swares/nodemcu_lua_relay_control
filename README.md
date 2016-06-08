@@ -70,6 +70,8 @@ Nodemcu Lua $6
         brd1 - brd2 - ads1115-3 - ext4 - Rain Drops Sensor #3 
 
         # code / libs
+        Nodemcu Lua / wifi
+        use my wifi.lua
         ADS1115 4 Channel 16 Bit I2C ADC Module with Pro Gain Amplifier - analog read
         https://github.com/Hydhen/NodeMCU/blob/master/ADS1X15/ADS1115.lua
         - 7x Soil Moisture Sensors
