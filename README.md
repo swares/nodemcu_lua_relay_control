@@ -54,14 +54,18 @@ Nodemcu Lua $6
         2D - I2C
         9d total  11d usable on brd
         brd1 - brd2 - ads1115 - 2x i2c 4-channel 15bit analog multiplexer
-        brd1 - brd2 - ads1115-1 - ext1 - Soil Moisture Sensor #1
-        brd1 - brd2 - ads1115-1 - ext2 - Soil Moisture Sensor #2 
-        brd1 - brd2 - ads1115-1 - ext3 - Soil Moisture Sensor #3
-        brd1 - brd2 - ads1115-1 - ext4 - Soil Moisture Sensor #4
-        brd1 - brd2 - ads1115-2 - ext1 - Soil Moisture Sensor #5
-        brd1 - brd2 - ads1115-2 - ext2 - Soil Moisture Sensor #6 
-        brd1 - brd2 - ads1115-2 - ext3 - Light Intensity Sensor
-        brd1 - brd2 - ads1115-2 - ext4 - UV Light Intensity Sensor
+        brd1 - brd2 - ads1115-1 - ext1 - Light Intensity Sensor
+        brd1 - brd2 - ads1115-1 - ext2 - UV Light Intensity Sensor
+        brd1 - brd2 - ads1115-1 - ext3 - Soil Moisture Sensor #1
+        brd1 - brd2 - ads1115-1 - ext4 - Soil Moisture Sensor #2 
+        brd1 - brd2 - ads1115-2 - ext1 - Soil Moisture Sensor #3
+        brd1 - brd2 - ads1115-2 - ext2 - Soil Moisture Sensor #4
+        brd1 - brd2 - ads1115-2 - ext3 - Soil Moisture Sensor #5
+        brd1 - brd2 - ads1115-2 - ext4 - Soil Moisture Sensor #6 
+        brd1 - brd2 - ads1115-3 - ext1 - Soil Moisture Sensor #7
+        brd1 - brd2 - ads1115-3 - ext2 - Rain Drops Sensor #1
+        brd1 - brd2 - ads1115-3 - ext3 - Rain Drops Sensor #2
+        brd1 - brd2 - ads1115-3 - ext4 - Rain Drops Sensor #3 
 
         
 # notes for enhanced webpage layout (even better if used with ajax)
