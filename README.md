@@ -69,6 +69,21 @@ Nodemcu Lua $6
         brd1 - brd2 - ads1115-3 - ext3 - Rain Drops Sensor #2
         brd1 - brd2 - ads1115-3 - ext4 - Rain Drops Sensor #3 
 
+        # code / libs
+        ADS1115 4 Channel 16 Bit I2C ADC Module with Pro Gain Amplifier - analog read
+        https://github.com/Hydhen/NodeMCU/blob/master/ADS1X15/ADS1115.lua
+        - 7x Soil Moisture Sensors
+        - 1x Light Intensity Sensor
+        - 1x UV Intensity Sensor
+        3x Rain Drops Sensors - digital read
+        1x Air Humidity / Temperature Sensor DHT-11 - 1-wire?
+        https://github.com/ok1cdj/ESP8266-LUA/blob/master/Thermometer-DHT11-Thingspeak/dht11.lua
+        1x DS3231 RTC Only - I2c
+        https://github.com/nodemcu/nodemcu-firmware/blob/master/lua_modules/ds3231/ds3231.lua
+        1x pir motion sensor - digital read
+
+
+
         
 # notes for enhanced webpage layout (even better if used with ajax)
 
