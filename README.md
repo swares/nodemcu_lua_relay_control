@@ -11,6 +11,7 @@ Nodemcu Lua $6
 
         ADS1115 4 Channel 16 Bit I2C ADC Module with Pro Gain Amplifier $3
         7x Soil Moisture Sensors $6
+        3x Rain Drops Sensors 
         1x Light Intensity Sensor $1
         1x UV Intensity Sensor $9
         1x Air Humidity / Temperature Sensor DHT-11 $1.33
