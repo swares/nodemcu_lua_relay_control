@@ -1,3 +1,11 @@
+-- Requirements
+bit = require("bit")
+-- Global variable for i2c
+SDA                                 = 2
+SCL                                 = 3
+-- Global variable for ADS1115
+ADDR                                = 0x48
+ADS1115_CONVERTIONDELAY             = 8
 ADS1015_REG_POINTER_MASK            = 0x03
 ADS1015_REG_POINTER_CONVERT         = 0x00
 ADS1015_REG_POINTER_CONFIG          = 0x01
