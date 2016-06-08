@@ -32,3 +32,19 @@ SCL                                 = 3
 ADDR                                = 0x48
 
 ADS1115_CONVERTIONDELAY             = 8
+
+
+--- DHT11
+-- Measure temperature, humidity and post data to thingspeak.com
+-- 2014 OK1CDJ
+-- DHT11 code is from esp8266.com
+---Sensor DHT11 is conntected to GPIO0
+pin = 3
+-- GPIO0 = 3 GPIO2 = 4
+
+Humidity = 0
+HumidityDec=0
+Temperature = 0
+TemperatureDec=0
+Checksum = 0
+ChecksumTest=0
