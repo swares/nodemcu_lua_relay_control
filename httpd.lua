@@ -1,3 +1,9 @@
+-- config / start httpd server
+led0 = 3 // program to internal led
+led1 = 4
+led2 = 5
+led3 = 6
+led4 = 7
 gpio.mode(led0, gpio.OUTPUT)
 gpio.mode(led1, gpio.OUTPUT)
 gpio.mode(led2, gpio.OUTPUT)
