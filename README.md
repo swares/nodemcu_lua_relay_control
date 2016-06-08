@@ -15,6 +15,7 @@ Nodemcu Lua $6
         1x Light Intensity Sensor $1
         1x UV Intensity Sensor $9
         1x Air Humidity / Temperature Sensor DHT-11 $1.33
+        1x DS3231 RTC Only
         
         pir motion sensor
         ultrasonic sensor $1.50
@@ -42,6 +43,8 @@ Nodemcu Lua $6
         1D - 1-Wire
         brd1 - dht22 - air humidity and temperature
         brd1 - wifi
+        2D - I2C
+        brd1 - DS3231 RTC Only
         4D - Digital
         brd1 - httpd / switch #1 - Mister
         brd1 - httpd / switch #2 - Alarm
@@ -53,7 +56,7 @@ Nodemcu Lua $6
         brd1 - ext2 - HC-SR04 - Ultrasonic Range Sensor (door open?, someone in center of gh?)
 
         2D - I2C
-        9d total  11d usable on brd
+        11d total  11d usable on brd
         brd1 - brd2 - ads1115 - 2x i2c 4-channel 15bit analog multiplexer
         brd1 - brd2 - ads1115-1 - ext1 - Light Intensity Sensor
         brd1 - brd2 - ads1115-1 - ext2 - UV Light Intensity Sensor
