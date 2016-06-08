@@ -19,3 +19,16 @@ led1 = 4
 led2 = 5
 led3 = 6
 led4 = 7
+
+-- ADS1115 ADC
+-- Requirements
+bit = require("bit")
+
+-- Global variable for i2c
+SDA                                 = 2
+SCL                                 = 3
+
+-- Global variable for ADS1115
+ADDR                                = 0x48
+
+ADS1115_CONVERTIONDELAY             = 8
