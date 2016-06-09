@@ -78,6 +78,7 @@ gpio.mode(led1, gpio.OUTPUT)
 gpio.mode(led2, gpio.OUTPUT)
 gpio.mode(led3, gpio.OUTPUT)
 gpio.mode(led4, gpio.OUTPUT)
+-- start server
 srv=net.createServer(net.TCP)
 srv:listen(80,function(conn)
     conn:on("receive", function(client,request)
