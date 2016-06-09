@@ -81,6 +81,7 @@ gpio.mode(led4, gpio.OUTPUT)
 srv=net.createServer(net.TCP)
 srv:listen(80,function(conn)
     conn:on("receive", function(client,request)
+        -- process connectinn
         local _, _, method, path, vars = string.find(request, "([A-Z]+) (.+)?(.+) HTTP");
         if(method == nil)then
             _, _, method, path = string.find(request, "([A-Z]+) (.+) HTTP");
@@ -114,6 +115,7 @@ srv:listen(80,function(conn)
         elseif(_GET.pin == "OFF4")then
               gpio.write(led4, gpio.LOW);
         end
+        -- send webpage
         client:send(webpage);
         client:close();
         collectgarbage();
