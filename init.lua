@@ -20,3 +20,7 @@ led2 = 5
 led3 = 6
 led4 = 7
 
+dofile(wifi.lua")
+--dofile(pir.lua")
+--dofile(pir.lua")
+--dofile(pir.lua")
