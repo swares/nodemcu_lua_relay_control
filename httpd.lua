@@ -81,7 +81,6 @@ gpio.mode(led4, gpio.OUTPUT)
 srv=net.createServer(net.TCP)
 srv:listen(80,function(conn)
     conn:on("receive", function(client,request)
-        local buf = "";
         local _, _, method, path, vars = string.find(request, "([A-Z]+) (.+)?(.+) HTTP");
         if(method == nil)then
             _, _, method, path = string.find(request, "([A-Z]+) (.+) HTTP");
@@ -92,12 +91,7 @@ srv:listen(80,function(conn)
                 _GET[k] = v
             end
         end
-        buf = buf.."<!doctype html><title>Greenhouse Control</title><h1>Greenhouse Control</h1>";
-        buf = buf.."<p>GPIO0 <a href=\"?pin=ON0\"><button>ON</button></a>&nbsp;<a href=\"?pin=OFF0\"><button>OFF</button></a></p>";
-        buf = buf.."<p>GPIO1 <a href=\"?pin=ON1\"><button>ON</button></a>&nbsp;<a href=\"?pin=OFF1\"><button>OFF</button></a></p>";
-        buf = buf.."<p>GPIO2 <a href=\"?pin=ON2\"><button>ON</button></a>&nbsp;<a href=\"?pin=OFF2\"><button>OFF</button></a></p>";
-        buf = buf.."<p>GPIO3 <a href=\"?pin=ON3\"><button>ON</button></a>&nbsp;<a href=\"?pin=OFF3\"><button>OFF</button></a></p>";
-        buf = buf.."<p>GPIO4 <a href=\"?pin=ON4\"><button>ON</button></a>&nbsp;<a href=\"?pin=OFF4\"><button>OFF</button></a></p>";
+        -- handle switching, if selected
         local _on,_off = "",""
         if(_GET.pin == "ON0")then
               gpio.write(led0, gpio.HIGH);
@@ -120,7 +114,7 @@ srv:listen(80,function(conn)
         elseif(_GET.pin == "OFF4")then
               gpio.write(led4, gpio.LOW);
         end
-        client:send(buf);
+        client:send(webpage);
         client:close();
         collectgarbage();
     end)
