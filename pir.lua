@@ -12,3 +12,4 @@ function nomotion()
   gpio.trig(6,"up",motion)  -- trigger on rising edge
   return stat
 end
+gpio.trig(6,"up",motion)
