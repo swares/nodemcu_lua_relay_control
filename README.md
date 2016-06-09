@@ -98,3 +98,22 @@ Nodemcu Lua $6
                 <p>Switch - 1:   2:   3:   4:  </p>
                 
                 
+
+                        client.println("<script>");
+                        client.println("function GetSwitchState() {");
+                        client.println("nocache = \"&nocache=\"\
+                                                         + Math.random() * 1000000;");
+                        client.println("var request = new XMLHttpRequest();");
+                        client.println("request.onreadystatechange = function() {");
+                        client.println("if (this.readyState == 4) {");
+                        client.println("if (this.status == 200) {");
+                        client.println("if (this.responseText != null) {");
+                        client.println("document.getElementById(\"switch_txt\")\
+.innerHTML = this.responseText;");
+                        client.println("}}}}");
+                        client.println(
+                        "request.open(\"GET\", \"ajax_switch\" + nocache, true);");
+                        client.println("request.send(null);");
+                        client.println("setTimeout('GetSwitchState()', 1000);");
+                        client.println("}");
+                        client.println("</script>");
