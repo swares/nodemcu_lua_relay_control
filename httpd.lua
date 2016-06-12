@@ -28,6 +28,18 @@ webpage = [[
     }
       </style>
       <title>Greenhouse Control</title>
+<script>function GetSwitchState() {
+nocache = "&nocache=" + Math.random() * 1000000;
+var request = new XMLHttpRequest();
+request.onreadystatechange = function() {
+if (this.readyState == 4) {
+if (this.status == 200) {
+if (this.responseText != null) {document.getElementById("statuscontent").innerHTML = this.responseText;}}}}
+request.open("GET", "ajax_switch" + nocache, true);
+request.send(null);
+setTimeout('GetSwitchState()', 1000);
+}</script>
+
     </head>
     <body>
       <h1>Greenhouse Control</h1>
