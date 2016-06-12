@@ -1,5 +1,5 @@
 -- Configure Wireless Internet
-print('\nGreenhouse Control\n')
+print('\nStarting WIFI...\n')
 wifi.setmode(wifi.STATION)
 print('set mode=STATION (mode='..wifi.getmode()..')\n')
 print('MAC Address: ',wifi.sta.getmac())
