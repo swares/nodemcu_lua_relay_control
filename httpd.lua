@@ -141,13 +141,13 @@ function GetSwitchState()
     print("Switch 1 state: OFF");
   end
   if (gpio.read(2)) then
-    print("Switch 1 state: ON");
+    print("Switch 2 state: ON");
   else
-    print("Switch 1 state: OFF");
+    print("Switch 2 state: OFF");
   end
   if (gpio.read(3)) then
-    print("Switch state: ON");
+    print("Switch 3 state: ON");
   else
-    print("Switch state: OFF");
+    print("Switch 3 state: OFF");
   end
 end
