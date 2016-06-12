@@ -41,7 +41,7 @@ setTimeout('GetSwitchState()', 1000);
 }</script>
 
     </head>
-    <body>
+    <body onload="GetSwitchState()">
       <h1>Greenhouse Control</h1>
       <div id="page">
         <div id="maincontent">
@@ -127,3 +127,14 @@ srv:listen(80,function(conn)
         collectgarbage();
     end)
 end)
+
+// send the state of the switch to the web browser
+void GetSwitchState(EthernetClient cl)
+{
+    if (digitalRead(3)) {
+        cl.println("Switch state: ON");
+    }
+    else {
+        cl.println("Switch state: OFF");
+    }
+}
