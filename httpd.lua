@@ -72,12 +72,10 @@ led0 = 3 // program to internal led
 led1 = 4
 led2 = 5
 led3 = 6
-led4 = 7
 gpio.mode(led0, gpio.OUTPUT)
 gpio.mode(led1, gpio.OUTPUT)
 gpio.mode(led2, gpio.OUTPUT)
 gpio.mode(led3, gpio.OUTPUT)
-gpio.mode(led4, gpio.OUTPUT)
 -- start server
 srv=net.createServer(net.TCP)
 srv:listen(80,function(conn)
@@ -111,10 +109,6 @@ srv:listen(80,function(conn)
               gpio.write(led3, gpio.HIGH);
         elseif(_GET.pin == "OFF3")then
               gpio.write(led3, gpio.LOW);
-        elseif(_GET.pin == "ON4")then
-              gpio.write(led4, gpio.HIGH);
-        elseif(_GET.pin == "OFF4")then
-              gpio.write(led4, gpio.LOW);
         end
         -- send webpage
         client:send(webpage);
