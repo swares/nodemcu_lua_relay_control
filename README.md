@@ -83,37 +83,3 @@ Nodemcu Lua $6
         1x DS3231 RTC Only - I2c
         https://github.com/nodemcu/nodemcu-firmware/blob/master/lua_modules/ds3231/ds3231.lua
         1x pir motion sensor - digital read
-
-
-# notes for enhanced webpage layout (even better if used with ajax)
-
-
-                // Status Page Data
-                <p>Temperature, Air: </p>
-                <p>Humidity, Air: </p>
-                <p>Humidity, Soil - 1:   2:  3:  4:  5: </p>
-                <p>Light Level</p>
-                <p>UV Level</p>
-                <p>Led 0</p>
-                <p>Switch - 1:   2:   3:   4:  </p>
-                
-                
-
-                        client.println("<script>");
-                        client.println("function GetSwitchState() {");
-                        client.println("nocache = \"&nocache=\"\
-                                                         + Math.random() * 1000000;");
-                        client.println("var request = new XMLHttpRequest();");
-                        client.println("request.onreadystatechange = function() {");
-                        client.println("if (this.readyState == 4) {");
-                        client.println("if (this.status == 200) {");
-                        client.println("if (this.responseText != null) {");
-                        client.println("document.getElementById(\"switch_txt\")\
-.innerHTML = this.responseText;");
-                        client.println("}}}}");
-                        client.println(
-                        "request.open(\"GET\", \"ajax_switch\" + nocache, true);");
-                        client.println("request.send(null);");
-                        client.println("setTimeout('GetSwitchState()', 1000);");
-                        client.println("}");
-                        client.println("</script>");
