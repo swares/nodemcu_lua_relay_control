@@ -111,7 +111,7 @@ print('I2C_SETUP...')
 i2c.setup(0, SDA, SCL, i2c.SLOW)
 print('SET UP')
 
-function main()
+function readAnalog()
     local a = readADC_SingleEnded(0)
     if a == nil then
         a = 0
@@ -135,4 +135,4 @@ function main()
     print("4: " .. d)
 end
 
-tmr.alarm(0, 1000, 1, function() main() end )
+-- tmr.alarm(0, 1000, 1, function() main() end )
