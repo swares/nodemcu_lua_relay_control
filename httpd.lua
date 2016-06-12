@@ -128,13 +128,11 @@ srv:listen(80,function(conn)
     end)
 end)
 
-// send the state of the switch to the web browser
-void GetSwitchState(EthernetClient cl)
-{
-    if (digitalRead(3)) {
-        cl.println("Switch state: ON");
-    }
-    else {
-        cl.println("Switch state: OFF");
-    }
-}
+-- send the state of the switch to the web browser
+function GetSwitchState()
+  if (gpio.read(3)) then
+    cl.println("Switch state: ON");
+  else
+    cl.println("Switch state: OFF");
+  end
+end
