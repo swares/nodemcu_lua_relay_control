@@ -131,8 +131,8 @@ end)
 -- send the state of the switch to the web browser
 function GetSwitchState()
   if (gpio.read(3)) then
-    cl.println("Switch state: ON");
+    print("Switch state: ON");
   else
-    cl.println("Switch state: OFF");
+    print("Switch state: OFF");
   end
 end
